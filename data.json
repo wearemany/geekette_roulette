@@ -1,0 +1,165 @@
+{
+  "users": [
+    {
+      "id": "6208727_0c62be",
+      "first_name": "Diana",
+      "last_name": "Knodel",
+      "display_name": "Dr. Diana Knodel",
+      "page_name": "Diana_Knodel",
+      "employment_status": "EMPLOYEE",
+      "gender": "f",
+      "birth_date": {
+        "day": 26,
+        "month": 6,
+        "year": 1981
+      },
+      "active_email": "diana.knodel@xing.com",
+      "time_zone": {
+        "utc_offset": 2,
+        "name": "Europe/Berlin"
+      },
+      "premium_services": [
+        "SEARCH",
+        "PRIVATEMESSAGES"
+      ],
+      "badges": [
+        "PREMIUM",
+        "MODERATOR"
+      ],
+      "wants": " 017684268184 Räume und Coaches für die OpenTechSchool Hamburg, Sponsoring und Kooperationen für die Hamburg Geekettes",
+      "haves": "Hamburg Geekettes, Learning & Coaching through OpenTechSchool Hamburg, Projektmanagement, Anforderungsmanagement und Konzeption, PHP, HTML5, CSS, Human-Computer Interaction, User Experience, Product Management",
+      "interests": "Snowboarden, Lesen, Reisen",
+      "organisation_member": "Hamburg Geekettes, OpenTechSchool Hamburg",
+      "languages": {
+        "en": "FLUENT",
+        "fr": "BASIC",
+        "de": "NATIVE"
+      },
+      "private_address": {
+        "street": null,
+        "zip_code": null,
+        "city": null,
+        "province": null,
+        "country": null,
+        "email": "diana.knodel@googlemail.com",
+        "phone": null,
+        "fax": null,
+        "mobile_phone": null
+      },
+      "business_address": {
+        "street": null,
+        "zip_code": null,
+        "city": "Hamburg",
+        "province": "Hamburg",
+        "country": "DE",
+        "email": null,
+        "phone": null,
+        "fax": null,
+        "mobile_phone": null
+      },
+      "web_profiles": {
+        "homepage": [
+          "http://about.me/diana.knodel"
+        ],
+        "twitter": [
+          "https://twitter.com/DianaKnodel"
+        ]
+      },
+      "instant_messaging_accounts": {},
+      "professional_experience": {
+        "primary_company": {
+          "name": "XING AG",
+          "url": null,
+          "tag": "XINGAG",
+          "company_size": null,
+          "industry": "INFORMATION_TECHNOLOGY_AND_SERVICES",
+          "title": "Product Owner",
+          "career_level": "PROFESSIONAL_EXPERIENCED",
+          "description": null,
+          "begin_date": "2013-09",
+          "end_date": null
+        },
+        "non_primary_companies": [
+          {
+            "name": "ETHALON GmbH",
+            "url": null,
+            "tag": "ETHALONGMBH",
+            "company_size": "51-200",
+            "industry": "INFORMATION_TECHNOLOGY_AND_SERVICES",
+            "title": "Team Lead Engineering & IT Project Manager",
+            "career_level": "MANAGER_SUPERVISOR",
+            "description": null,
+            "begin_date": "2010-06",
+            "end_date": "2013-09"
+          },
+          {
+            "name": "Universität Regensburg",
+            "url": "http://www.cybermentor.de",
+            "tag": "UNIVERSITÄTREGENSBURG",
+            "company_size": null,
+            "industry": "ACADEMIA",
+            "title": "Wissenschaftliche Mitarbeiterin, Projektkoordination CyberMentor",
+            "career_level": "PROFESSIONAL_EXPERIENCED",
+            "description": "Teamleitung, Projektmanagement, Webentwicklung, Aufbau einer Online-Community, Drittmittelprojekt CyberMentor (www.cybermentor.de)",
+            "begin_date": "2007-10",
+            "end_date": "2010-05"
+          },
+          {
+            "name": "Universität Ulm",
+            "url": "http://www.uni-ulm.de",
+            "tag": "UNIVERSITÄTULM",
+            "company_size": null,
+            "industry": "ACADEMIA",
+            "title": "Wissenschaftliche Mitarbeiterin (Dipl.-Inf.)",
+            "career_level": null,
+            "description": "Projektmanagement, Webentwicklung, Aufbau einer Online-Community, Drittmittelprojekt CyberMentor (www.cybermentor.de)",
+            "begin_date": "2005-03",
+            "end_date": "2007-09"
+          },
+          {
+            "name": "Solimedia Productions GmbH",
+            "url": "http://www.solimedia.de",
+            "tag": "SOLIMEDIAPRODUCTIONSGMBH",
+            "company_size": "11-50",
+            "industry": "ELEARNING",
+            "title": "Praktikum",
+            "career_level": "STUDENT_INTERN",
+            "description": "Programmierung, Screendesign, Qualitätssicherung",
+            "begin_date": "2004-10",
+            "end_date": "2004-12"
+          }
+        ],
+        "awards": []
+      },
+      "educational_background": {
+        "qualifications": [],
+        "schools": [
+          {
+            "begin_date": "2005-01",
+            "end_date": "2010-01",
+            "notes": "Human-Computer Interaction, Online-Communities, Social Media, Psychologie",
+            "subject": "Informatik",
+            "degree": "Promotion",
+            "name": "Universität Ulm"
+          },
+          {
+            "begin_date": "2000-10",
+            "end_date": "2005-02",
+            "notes": "Software-/Webentwicklung, Usability, Datenbanken, E-Learning, Psychologie",
+            "subject": "Medieninformatik",
+            "degree": "Diplom",
+            "name": "Universität Ulm"
+          }
+        ]
+      },
+      "photo_urls": {
+        "large": "https://x1.xingassets.com/img/users/3/2/d/d3360223d.6208727,8.140x185.jpg",
+        "maxi_thumb": "https://x1.xingassets.com/img/users/3/2/d/d3360223d.6208727,8.70x93.jpg",
+        "medium_thumb": "https://x1.xingassets.com/img/users/3/2/d/d3360223d.6208727,8.57x75.jpg",
+        "mini_thumb": "https://x1.xingassets.com/img/users/3/2/d/d3360223d.6208727,8.18x24.jpg",
+        "thumb": "https://x1.xingassets.com/img/users/3/2/d/d3360223d.6208727,8.30x40.jpg"
+      },
+      "permalink": "https://www.xing.com/profile/Diana_Knodel"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+../../XINGAPI/XNGAPIClient/NSError+XWS.h

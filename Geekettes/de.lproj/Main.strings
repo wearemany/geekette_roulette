@@ -1,0 +1,51 @@
+
+/* Class = "IBUIButton"; normalTitle = "WaM it!"; ObjectID = "2cT-4l-lZI"; */
+"2cT-4l-lZI.normalTitle" = "WaM it!";
+
+/* Class = "IBUINavigationItem"; title = "Your Profile"; ObjectID = "Apb-Pf-fiR"; */
+"Apb-Pf-fiR.title" = "Dein Profil";
+
+/* Class = "IBUITextField"; placeholder = "City"; ObjectID = "CrS-0s-vEN"; */
+"CrS-0s-vEN.placeholder" = "Stadt";
+
+/* Class = "IBUITextField"; placeholder = "Profession"; ObjectID = "Fbx-3N-aPB"; */
+"Fbx-3N-aPB.placeholder" = "Beruf";
+
+/* Class = "IBUITextField"; placeholder = "Twitter"; ObjectID = "Fhc-bW-ElG"; */
+"Fhc-bW-ElG.placeholder" = "Twitter";
+
+/* Class = "IBUITextField"; placeholder = "Name"; ObjectID = "Hag-7J-JnL"; */
+"Hag-7J-JnL.placeholder" = "Name";
+
+/* Class = "IBUITextView"; text = "Interests"; ObjectID = "JPJ-1z-Hd6"; */
+"JPJ-1z-Hd6.text" = "Interessen";
+
+/* Class = "IBUILabel"; text = "Name:"; ObjectID = "JcU-2n-Ya2"; */
+"JcU-2n-Ya2.text" = "Name:";
+
+/* Class = "IBUITextField"; placeholder = "E-Mail"; ObjectID = "KDU-Jn-ALN"; */
+"KDU-Jn-ALN.placeholder" = "E-Mail";
+
+/* Class = "IBUILabel"; text = "Connect with me:"; ObjectID = "Nbh-EW-VJv"; */
+"Nbh-EW-VJv.text" = "Verbinde dich mit mir:";
+
+/* Class = "IBUIBarButtonItem"; title = "Save"; ObjectID = "OOi-sA-W8f"; */
+"OOi-sA-W8f.title" = "Speichern";
+
+/* Class = "IBUIBarButtonItem"; title = "logout"; ObjectID = "dyF-cB-MMT"; */
+"dyF-cB-MMT.title" = "Ausloggen";
+
+/* Class = "IBUILabel"; text = "Connect with me:"; ObjectID = "gDU-dX-wgC"; */
+"gDU-dX-wgC.text" = "Verbinde dich mit mir:";
+
+/* Class = "IBUILabel"; text = "Ort:"; ObjectID = "jqG-Fg-ap0"; */
+"jqG-Fg-ap0.text" = "Ort:";
+
+/* Class = "IBUITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "lrw-Nu-zdt"; */
+"lrw-Nu-zdt.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "IBUILabel"; text = "Profession"; ObjectID = "qKE-Pc-JVT"; */
+"qKE-Pc-JVT.text" = "Beruf";
+
+/* Class = "IBUIButton"; normalTitle = "Login with e-mail and passwort"; ObjectID = "rzJ-gX-iIY"; */
+"rzJ-gX-iIY.normalTitle" = "Anmeldung mit e-mail und passwort";

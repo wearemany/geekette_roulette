@@ -1,0 +1,21 @@
+PODS:
+  - AFNetworking (1.3.3)
+  - gtm-oauth (0.0.1):
+    - gtm-oauth/nibs
+  - gtm-oauth/nibs (0.0.1)
+  - SFHFKeychainUtils (0.0.1)
+  - XINGAPI (0.0.3):
+    - AFNetworking (~> 1.3.0)
+    - gtm-oauth (= 0.0.1)
+    - SFHFKeychainUtils (= 0.0.1)
+
+DEPENDENCIES:
+  - XINGAPI
+
+SPEC CHECKSUMS:
+  AFNetworking: 0700ec7a58c36ad217173e167f6e4df7270df66b
+  gtm-oauth: b2725c564e3d50c8b6109ac292414a9cceb47dd0
+  SFHFKeychainUtils: e828dbd9eaa509486acf95d8de2ebd414c4b7451
+  XINGAPI: ec6a28a236f0132303f72acc6315a97478d4eadd
+
+COCOAPODS: 0.20.2

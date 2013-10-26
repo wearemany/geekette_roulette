@@ -1,0 +1,1 @@
+../../XINGAPI/XNGAPIClient/XNGAPIClient+Invitations.h
