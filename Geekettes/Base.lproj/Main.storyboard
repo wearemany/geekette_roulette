@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="cir-u5-alq">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="cir-u5-alq">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+>>>>>>> code cleanup, seperate files for api calls, alerts for failed calls
     </dependencies>
     <scenes>
         <!--Login View Controller-->
@@ -139,7 +145,11 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="OOi-sA-W8f">
                             <connections>
+<<<<<<< HEAD
                                 <action selector="save" destination="vXZ-lx-hvc" id="N2t-A1-IIs"/>
+=======
+                                <action selector="save:" destination="vXZ-lx-hvc" id="4NC-qu-yW3"/>
+>>>>>>> code cleanup, seperate files for api calls, alerts for failed calls
                             </connections>
                         </barButtonItem>
                     </navigationItem>

@@ -8,15 +8,30 @@
 
 #import "HHGAppDelegate.h"
 #import "XNGAPIClient.h"
+<<<<<<< HEAD
 
+=======
+#import "HHGProfileViewController.h"
+
+#define XING_CLIENT_CONSUMER_SECRET @"e8d8427a9340643c34dfed9a0ae34fb3c5a52328"
+#define XING_CLIENT_CONSUMER_KEY @"6a72b7a5fa3bbdf9864c"
+>>>>>>> code cleanup, seperate files for api calls, alerts for failed calls
 @implementation HHGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [[UILabel appearance] setFont:[UIFont fontWithName:@"Lato-Light" size:14.0]];
+<<<<<<< HEAD
     // Override point for customization after application launch.
     return YES;
 }
+=======
+    [self initXingClient];
+    [self skipLoginIfNeeded];
+    return YES;
+}
+
+>>>>>>> code cleanup, seperate files for api calls, alerts for failed calls
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 {
     if ([[XNGAPIClient sharedClient] handleOpenURL:url]) {
@@ -27,6 +42,10 @@
     
     return NO;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> code cleanup, seperate files for api calls, alerts for failed calls
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -54,4 +73,21 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+<<<<<<< HEAD
+=======
+- (void)initXingClient
+{
+    XNGAPIClient *client = [XNGAPIClient sharedClient];
+    client.consumerKey = XING_CLIENT_CONSUMER_KEY;
+    client.consumerSecret = XING_CLIENT_CONSUMER_SECRET;
+}
+- (void)skipLoginIfNeeded
+{
+    XNGAPIClient *client = [XNGAPIClient sharedClient];
+//    if(client.isLoggedin){
+//        self.window.rootViewController = [[HHGProfileViewController alloc] init];
+//    }
+
+}
+>>>>>>> code cleanup, seperate files for api calls, alerts for failed calls
 @end

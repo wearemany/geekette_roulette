@@ -7,8 +7,15 @@
 //
 
 #import "HHGViewController.h"
+<<<<<<< HEAD
 #import "XNGAPIClient+UserProfiles.h"
 #import "HHGProfileViewController.h"
+=======
+#import "HHGUser.h"
+#import "XNGAPIClient+UserProfiles.h"
+#import "HHGProfileViewController.h"
+#import "HHGAPI.h"
+>>>>>>> code cleanup, seperate files for api calls, alerts for failed calls
 
 @interface HHGViewController ()
 
@@ -20,21 +27,32 @@
 {
     [super viewDidLoad];
     [self setup];
+<<<<<<< HEAD
 	// Do any additional setup after loading the view, typically from a nib.
+=======
+>>>>>>> code cleanup, seperate files for api calls, alerts for failed calls
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+<<<<<<< HEAD
     // Dispose of any resources that can be recreated.
 }
+=======
+}
+
+>>>>>>> code cleanup, seperate files for api calls, alerts for failed calls
 - (void)setup
 {
     XNGAPIClient *client = [XNGAPIClient sharedClient];
     [client getUserWithID:@"me"
                userFields:nil
                   success:^(NSDictionary *dict){
+<<<<<<< HEAD
                       //NSDictionary *jsonObject = dict;
+=======
+>>>>>>> code cleanup, seperate files for api calls, alerts for failed calls
                       NSArray *users = dict[@"users"];
                       NSDictionary *daten = users[0];
                       [_nameLabel setText:daten[@"display_name"]];
@@ -58,6 +76,7 @@
     [client logout];
 }
 
+<<<<<<< HEAD
 - (IBAction)save;
 {
     NSURL *url = [NSURL URLWithString:@"http://boiling-depths-9831.herokuapp.com"];
@@ -87,6 +106,31 @@
     [profile setupWithName:_nameLabel.text place:_placeLabel.text email:_emailLabel.text image:_userPhoto.image interests:_interests.text twitter:_twitterLabel.text userID:_userID profession:_professionLabel.text];
     [self.navigationController pushViewController:profile animated:YES];
     //call fürs backend
+=======
+- (IBAction)save:(id)sender
+{
+    HHGUser *user = [[HHGUser alloc] init];
+    
+    user.name = _nameLabel.text;
+    user.place = _placeLabel.text;
+    user.email = _emailLabel.text;
+    user.profilePicture = _userPhoto.image;
+    user.twitter = _twitterLabel.text;
+    user.interests = _interests.text;
+    user.userID =_userID;
+    user.profession = _professionLabel.text;
+    [HHGAPI createUserWithUserObject:user callback:^(HHGUser *user, NSError *error)
+    {
+        if (error == nil) {
+            UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            HHGProfileViewController* profile = [sb instantiateViewControllerWithIdentifier:@"yourProfile"];
+            [profile setupWithUser:user];
+            [self.navigationController pushViewController:profile animated:YES];
+        } else {
+            //TODO:write alert
+        }
+    }];
+>>>>>>> code cleanup, seperate files for api calls, alerts for failed calls
 }
 
 - (void)loadImageWithUrl:(NSString*)path

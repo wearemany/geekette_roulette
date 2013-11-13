@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3C8ED28B-ADDD-43CB-81C6-2E165F71D0C8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Geekettes</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>763E394B-1145-4212-84FD-72001DFBC2F2</key>
+		<string>ssh://github.com/carolanitz/geekette_roulette.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Geekettes.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>763E394B-1145-4212-84FD-72001DFBC2F2</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/carolanitz/geekette_roulette.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>763E394B-1145-4212-84FD-72001DFBC2F2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>763E394B-1145-4212-84FD-72001DFBC2F2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>geekette_roulette</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -7,12 +7,17 @@
 //
 
 #import "HHGProfileViewController.h"
+<<<<<<< HEAD
+=======
+#import "HHGAPI.h"
+>>>>>>> code cleanup, seperate files for api calls, alerts for failed calls
 #import "XNGAPIClient+ContactRequests.h"
 #import "XNGAPIClient+Messages.h"
 #import "XNGAPIClient+Userprofiles.h"
 
 @interface HHGProfileViewController ()
 {
+<<<<<<< HEAD
     NSString* _name;
     NSString* _place;
     NSString* _email;
@@ -20,6 +25,10 @@
     UIImage* _image;
     NSString* _twitter;
     NSString* _profession;
+=======
+    HHGUser *_user;
+    NSMutableArray *_users;
+>>>>>>> code cleanup, seperate files for api calls, alerts for failed calls
 }
 
 @end
@@ -30,17 +39,24 @@
 {
     [super viewDidLoad];
     [self setup];
+<<<<<<< HEAD
 	// Do any additional setup after loading the view, typically from a nib.
+=======
+>>>>>>> code cleanup, seperate files for api calls, alerts for failed calls
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+<<<<<<< HEAD
     // Dispose of any resources that can be recreated.
+=======
+>>>>>>> code cleanup, seperate files for api calls, alerts for failed calls
 }
 
 - (void)setup
 {
+<<<<<<< HEAD
     [_nameLabel setText:_name];
     if(![_place isEqual: [NSNull null]])
     [_placeLabel setText:_place];
@@ -65,11 +81,41 @@
     _twitter = twitter;
     _userID = userID;
     _profession = profession;
+=======
+    if(_user == nil) {
+        //we came directly here because the user is logged in
+        [self next:nil];
+    } else {
+        [_nameLabel setText:_user.name];
+        if(![_user.place isEqual: [NSNull null]])
+            [_placeLabel setText:_user.place];
+        [_emailLabel setText:_user.email];
+        [_userPhoto setImage:_user.profilePicture];
+        [_userPhoto.layer setCornerRadius:15.0];
+        _userPhoto.clipsToBounds = YES;
+        [_interests setFont:[UIFont fontWithName:@"Lato-Regularr" size:12]];
+        if(![_user.interests isEqual: [NSNull null]])
+            [_interests setText:_user.interests];
+        [_nameLabel setFont:[UIFont fontWithName:@"Lato-Bold" size:16]];
+        [_professionLabel setText:_user.profession];
+    }
+    if (!_users)
+        _users = [[NSMutableArray alloc] init];
+}
+
+- (void)setupWithUser:(HHGUser *)user
+{
+    _user = user;
+>>>>>>> code cleanup, seperate files for api calls, alerts for failed calls
 }
 
 - (IBAction)connectviaxing:(id)sender
 {
     XNGAPIClient *client = [XNGAPIClient sharedClient];
+<<<<<<< HEAD
+=======
+    //TODO:Localize
+>>>>>>> code cleanup, seperate files for api calls, alerts for failed calls
     [client postCreateContactRequestToUserWithID:_userID
                                          message: [NSString stringWithFormat:@"Hey,\n\n I saw you on We are many and wanted to connect with you on Xing.\n\n Greetings %@",_nameLabel.text]
                                          success:^(NSDictionary* dict){
@@ -79,6 +125,7 @@
                                                                                    cancelButtonTitle:@"OK"
                                                                                    otherButtonTitles:nil];
                                              [alert show];
+<<<<<<< HEAD
 //                                             [_connectviaxingButton setTitle:@"request sent" forState: UIControlStateNormal];
 //                                             [_connectviaxingButton setEnabled:NO];
                                          }
@@ -161,11 +208,53 @@
                       // handle failure
                   }];
     
+=======
+                                         }
+                                         failure:^(NSError *error){
+                                             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                                                             message:@"There was an Error sending your contact request"
+                                                                                            delegate:nil
+                                                                                   cancelButtonTitle:@"OK"
+                                                                                   otherButtonTitles:nil];
+                                             [alert show];
+                                            NSLog(@"failed %@", error);
+                                         }];
+}
+
+- (IBAction)next:(id)sender
+{
+    // we need to have a request here that is querying 10 users and saves them in an array
+    // when the request is done we get a callback with the data
+    // if we only have another 3 to go to get the next ten in the background
+    if([_users count] <= 3) {
+        [HHGAPI queryUsersWithCallback:^(NSArray *users, NSError *error){
+            if(error == nil){
+                _users = [[NSMutableArray alloc] initWithArray:[_users arrayByAddingObjectsFromArray:users]];
+            } else {
+                //here fehlerbehandlung
+            }
+        }];
+    }
+
+    if([_users count] > 0) {
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        HHGProfileViewController* profile = [sb instantiateViewControllerWithIdentifier:@"yourProfile"];
+        [profile setupWithUser:_users[0]];
+        [_users removeObjectAtIndex:0];
+
+        [self.navigationController pushViewController:profile animated:YES];
+    }
+
+>>>>>>> code cleanup, seperate files for api calls, alerts for failed calls
 }
 
 - (IBAction) mail:(id)sender
 {
+<<<<<<< HEAD
     NSString *recipients = [NSString stringWithFormat:@"mailto:%@",_email];
+=======
+    NSString *recipients = [NSString stringWithFormat:@"mailto:%@",_user.email];
+>>>>>>> code cleanup, seperate files for api calls, alerts for failed calls
     
     NSString *body = @"&body=It is raining in sunny California!";
     

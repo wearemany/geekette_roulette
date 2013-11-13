@@ -41,6 +41,9 @@
 		9B927C781809436400293874 /* GeekettesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B927C771809436400293874 /* GeekettesTests.m */; };
 		9B9863401809BCA100976A3F /* login_grey_18_retina_EN.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B98633F1809BCA100976A3F /* login_grey_18_retina_EN.png */; };
 		9B9863421809CBAF00976A3F /* iOS_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B9863411809CBAF00976A3F /* iOS_background.jpg */; };
+		9BA14DB3182857F50065C61B /* HHGAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA14DB2182857F50065C61B /* HHGAPI.m */; };
+		9BCE02BF182E3C1500B21EA0 /* HHGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCE02BE182E3C1500B21EA0 /* HHGUser.m */; };
+
 		9BE084D31809B6BC00333403 /* wam_logo_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BE084D21809B6BC00333403 /* wam_logo_black.png */; };
 		9BE084D51809B6C400333403 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BE084D41809B6C400333403 /* Default@2x.png */; };
 		CE1699FB27254BEF9DC176CF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B9DE70BDFD94D1081589F12 /* libPods.a */; };
@@ -101,11 +104,15 @@
 		9B927C771809436400293874 /* GeekettesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeekettesTests.m; sourceTree = "<group>"; };
 		9B98633F1809BCA100976A3F /* login_grey_18_retina_EN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_grey_18_retina_EN.png; sourceTree = "<group>"; };
 		9B9863411809CBAF00976A3F /* iOS_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iOS_background.jpg; sourceTree = "<group>"; };
+		9BA14DB1182857F50065C61B /* HHGAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHGAPI.h; sourceTree = "<group>"; };
+		9BA14DB2182857F50065C61B /* HHGAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHGAPI.m; sourceTree = "<group>"; };
 		9BADEABD1815C07D00E94E80 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		9BADEABE1815C07D00E94E80 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9BADEABF1815C07D00E94E80 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9BE084D21809B6BC00333403 /* wam_logo_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wam_logo_black.png; sourceTree = "<group>"; };
-		9BE084D41809B6C400333403 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		9BCE02BD182E3C1500B21EA0 /* HHGUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHGUser.h; sourceTree = "<group>"; };
+		9BCE02BE182E3C1500B21EA0 /* HHGUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHGUser.m; sourceTree = "<group>"; };
+		9BE084D21809B6BC00333403 /* wam_logo_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wam_logo_black.png; path = ../wam_logo_black.png; sourceTree = "<group>"; };
+		9BE084D41809B6C400333403 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,11 +140,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9B927C401809436300293874 = {
+
+		9B191975182669300003D298 /* Images */ = {
 			isa = PBXGroup;
 			children = (
 				9BE084D41809B6C400333403 /* Default@2x.png */,
 				9BE084D21809B6BC00333403 /* wam_logo_black.png */,
+				9B547263180A0C7800860AC9 /* XingIcon.png */,
+				9B547261180A0BBE00860AC9 /* MailIcon.png */,
+				9B54725F180A07D300860AC9 /* message.png */,
+				9B54725D180A069D00860AC9 /* Lato-Bold.ttf */,
+				9B54725B180A068300860AC9 /* Lato-Light.ttf */,
+				9B547259180A04D600860AC9 /* playgreeting_purple.png */,
+				9B547257180A045D00860AC9 /* Twitter.png */,
+				9B54724F180A019300860AC9 /* home.png */,
+				9B547250180A019300860AC9 /* edit.png */,
+				9B547251180A019300860AC9 /* like.png */,
+				9B547252180A019300860AC9 /* play.png */,
+				9B54724D180A018400860AC9 /* laptop.png */,
+				9B5472491809D00F00860AC9 /* silver_background.jpg */,
+				9B9863411809CBAF00976A3F /* iOS_background.jpg */,
+				9B98633F1809BCA100976A3F /* login_grey_18_retina_EN.png */,
+				9B8A784E1809B68A00D54F70 /* wam_logo_black.png */,
+				9B8A784C1809B4E100D54F70 /* splash1.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		9B1919761826694A0003D298 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9BA14DB4182857FF0065C61B /* Api */,
+				9B01E6D8180984EA00F01A86 /* HHGLoginViewController.h */,
+				9B01E6D9180984EA00F01A86 /* HHGLoginViewController.m */,
+				9B01E6DD1809A02400F01A86 /* HHGProfileViewController.h */,
+				9B01E6DE1809A02400F01A86 /* HHGProfileViewController.m */,
+				9B927C5B1809436300293874 /* HHGAppDelegate.h */,
+				9B927C5C1809436300293874 /* HHGAppDelegate.m */,
+				9B927C611809436300293874 /* HHGViewController.h */,
+				9B927C621809436300293874 /* HHGViewController.m */,
+				9BCE02BD182E3C1500B21EA0 /* HHGUser.h */,
+				9BCE02BE182E3C1500B21EA0 /* HHGUser.m */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		9B927C401809436300293874 = {
+			isa = PBXGroup;
+			children = (
 				9B927C521809436300293874 /* Geekettes */,
 				9B927C711809436400293874 /* GeekettesTests */,
 				9B927C4B1809436300293874 /* Frameworks */,
@@ -170,19 +220,12 @@
 		9B927C521809436300293874 /* Geekettes */ = {
 			isa = PBXGroup;
 			children = (
+				9B1919761826694A0003D298 /* src */,
 				9B4D33DE180976F400AB13AC /* data.json */,
-				9B927C5B1809436300293874 /* HHGAppDelegate.h */,
-				9B927C5C1809436300293874 /* HHGAppDelegate.m */,
 				9B927C5E1809436300293874 /* Main.storyboard */,
-				9B927C611809436300293874 /* HHGViewController.h */,
-				9B927C621809436300293874 /* HHGViewController.m */,
 				9B927C641809436300293874 /* Images.xcassets */,
 				9B4D33E018097B9300AB13AC /* images.jpeg */,
 				9B927C531809436300293874 /* Supporting Files */,
-				9B01E6D8180984EA00F01A86 /* HHGLoginViewController.h */,
-				9B01E6D9180984EA00F01A86 /* HHGLoginViewController.m */,
-				9B01E6DD1809A02400F01A86 /* HHGProfileViewController.h */,
-				9B01E6DE1809A02400F01A86 /* HHGProfileViewController.m */,
 			);
 			path = Geekettes;
 			sourceTree = "<group>";
@@ -190,23 +233,8 @@
 		9B927C531809436300293874 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9B547263180A0C7800860AC9 /* XingIcon.png */,
-				9B547261180A0BBE00860AC9 /* MailIcon.png */,
-				9B54725F180A07D300860AC9 /* message.png */,
-				9B54725D180A069D00860AC9 /* Lato-Bold.ttf */,
-				9B54725B180A068300860AC9 /* Lato-Light.ttf */,
-				9B547259180A04D600860AC9 /* playgreeting_purple.png */,
-				9B547257180A045D00860AC9 /* Twitter.png */,
-				9B54724F180A019300860AC9 /* home.png */,
-				9B547250180A019300860AC9 /* edit.png */,
-				9B547251180A019300860AC9 /* like.png */,
-				9B547252180A019300860AC9 /* play.png */,
-				9B54724D180A018400860AC9 /* laptop.png */,
-				9B5472491809D00F00860AC9 /* silver_background.jpg */,
-				9B9863411809CBAF00976A3F /* iOS_background.jpg */,
-				9B98633F1809BCA100976A3F /* login_grey_18_retina_EN.png */,
-				9B8A784E1809B68A00D54F70 /* wam_logo_black.png */,
-				9B8A784C1809B4E100D54F70 /* splash1.png */,
+
+				9B191975182669300003D298 /* Images */,
 				9B927C541809436300293874 /* Geekettes-Info.plist */,
 				9B927C551809436300293874 /* InfoPlist.strings */,
 				9B927C581809436300293874 /* main.m */,
@@ -231,6 +259,15 @@
 				9B927C741809436400293874 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9BA14DB4182857FF0065C61B /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				9BA14DB1182857F50065C61B /* HHGAPI.h */,
+				9BA14DB2182857F50065C61B /* HHGAPI.m */,
+			);
+			name = Api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,8 +423,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B927C5D1809436300293874 /* HHGAppDelegate.m in Sources */,
+				9BCE02BF182E3C1500B21EA0 /* HHGUser.m in Sources */,
 				9B927C591809436300293874 /* main.m in Sources */,
 				9B01E6DB180984EA00F01A86 /* HHGLoginViewController.m in Sources */,
+				9BA14DB3182857F50065C61B /* HHGAPI.m in Sources */,
 				9B927C631809436300293874 /* HHGViewController.m in Sources */,
 				9B01E6DF1809A02400F01A86 /* HHGProfileViewController.m in Sources */,
 			);

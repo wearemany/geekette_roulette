@@ -20,8 +20,15 @@
 @property (nonatomic, retain) IBOutlet UIImageView *userPhoto;
 @property (nonatomic, retain) IBOutlet UITextView *interests;
 
+<<<<<<< HEAD
 - (IBAction)connectviaxing:(id)sender;
 - (IBAction)playsound:(id)sender;
 - (IBAction)save:(id)sender;
 - (IBAction)logout:(id)sender;
+=======
+//- (IBAction)connectviaxing:(id)sender;
+- (IBAction)save:(id)sender;
+- (IBAction)logout:(id)sender;
+
+>>>>>>> code cleanup, seperate files for api calls, alerts for failed calls
 @end
