@@ -7,10 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-<<<<<<< HEAD
-=======
 #import "HHGUser.h"
->>>>>>> code cleanup, seperate files for api calls, alerts for failed calls
 
 @interface HHGProfileViewController : UIViewController
 
@@ -23,17 +20,11 @@
 @property (nonatomic, retain) IBOutlet UITextView *interests;
 @property (nonatomic, retain) IBOutlet UIButton *connectviaxingButton;
 @property (nonatomic, retain) NSString* userID;
-<<<<<<< HEAD
-- (void)setupWithName:(NSString*)name place:(NSString*)place email:(NSString*)email image:(UIImage*)image interests:(NSString*)interests twitter:(NSString*)twitter userID:(NSString*)userID profession:(NSString*)profession;
-- (IBAction)connectviaxing:(id)sender;
-- (IBAction)playsound:(id)sender;
-=======
 
 - (void)setupWithUser:(HHGUser *)user;
 
 - (IBAction)connectviaxing:(id)sender;
 
->>>>>>> code cleanup, seperate files for api calls, alerts for failed calls
 - (IBAction)next:(id)sender;
 
 @end
