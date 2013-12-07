@@ -12,13 +12,28 @@
 
 + (HHGUser *)userWithReponseObject:(id)responseObject
 {
-    return [[HHGUser alloc] init];
+    HHGUser *user = [[HHGUser alloc] init];
+    NSDictionary *dataObject = responseObject;
+    
+    user.name = dataObject[@"display_name"];
+    user.email = dataObject[@"active_email"];
+    user.interests = dataObject[@"interests"];
+    user.profession = dataObject[@"professional_experience"][@"title"];
+    user.place = dataObject[@"city"];
+    user.twitter = dataObject[@"twitter"];
+    user.userID = dataObject[@"id"];
+    
+    return user;
 }
 
 + (NSArray *)usersWithResponseObject:(id)responseObject
 {
-    
-    return [[NSArray alloc] init];
+    NSDictionary *dataObject = responseObject[@"users"];
+    NSMutableArray *users = [[NSMutableArray alloc] init];
+    for(NSDictionary *data in dataObject){
+        [users addObject: [self userWithReponseObject:data]];
+    }
+    return users;
 }
 
 @end

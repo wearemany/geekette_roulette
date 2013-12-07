@@ -11,10 +11,10 @@
 #import "XNGAPIClient+ContactRequests.h"
 #import "XNGAPIClient+Messages.h"
 #import "XNGAPIClient+Userprofiles.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface HHGProfileViewController ()
 {
-
     HHGUser *_user;
     NSMutableArray *_users;
 }
@@ -32,7 +32,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-
 }
 
 - (void)setup
@@ -46,9 +45,10 @@
             [_placeLabel setText:_user.place];
         [_emailLabel setText:_user.email];
         [_userPhoto setImage:_user.profilePicture];
-        [_userPhoto.layer setCornerRadius:15.0];
+        [_userPhoto.layer setCornerRadius:_userPhoto.frame.size.width / 2.0];
         _userPhoto.clipsToBounds = YES;
-        [_interests setFont:[UIFont fontWithName:@"Lato-Regularr" size:12]];
+        _userPhoto.layer.masksToBounds = YES;
+        [_interests setFont:[UIFont fontWithName:@"Lato-light" size:12]];
         if(![_user.interests isEqual: [NSNull null]])
             [_interests setText:_user.interests];
         [_nameLabel setFont:[UIFont fontWithName:@"Lato-Bold" size:16]];

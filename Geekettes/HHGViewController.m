@@ -73,17 +73,23 @@
     user.interests = _interests.text;
     user.userID =_userID;
     user.profession = _professionLabel.text;
-    [HHGAPI createUserWithUserObject:user callback:^(HHGUser *user, NSError *error)
-    {
-        if (error == nil) {
-            UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-            HHGProfileViewController* profile = [sb instantiateViewControllerWithIdentifier:@"yourProfile"];
-            [profile setupWithUser:user];
-            [self.navigationController pushViewController:profile animated:YES];
-        } else {
-            //TODO:write alert
-        }
-    }];
+
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    HHGProfileViewController* profile = [sb instantiateViewControllerWithIdentifier:@"yourProfile"];
+    [profile setupWithUser:user];
+    [self.navigationController pushViewController:profile animated:YES];
+
+//    [HHGAPI createUserWithUserObject:user callback:^(HHGUser *user, NSError *error)
+//    {
+//        if (error == nil) {
+//            UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//            HHGProfileViewController* profile = [sb instantiateViewControllerWithIdentifier:@"yourProfile"];
+//            [profile setupWithUser:user];
+//            [self.navigationController pushViewController:profile animated:YES];
+//        } else {
+//            //TODO:write alert
+//        }
+//    }];
 }
 
 - (void)loadImageWithUrl:(NSString*)path
